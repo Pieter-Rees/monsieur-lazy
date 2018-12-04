@@ -1,0 +1,11 @@
+{
+  "name": "monsieur-lazy",
+  "version": "1.0.0",
+  "description": "Lazy loading plugin for all kind of purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
