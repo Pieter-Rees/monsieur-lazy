@@ -1,24 +1,34 @@
 "use strict";
 
-require("core-js/modules/web.dom.iterable");
+require("core-js/modules/web.timers.js");
 
-require("core-js/modules/es6.array.for-each");
+require("core-js/modules/es.array.for-each.js");
+
+require("core-js/modules/es.object.to-string.js");
+
+require("core-js/modules/esnext.async-iterator.for-each.js");
+
+require("core-js/modules/esnext.iterator.constructor.js");
+
+require("core-js/modules/esnext.iterator.for-each.js");
+
+require("core-js/modules/web.dom-collections.for-each.js");
 
 document.addEventListener("DOMContentLoaded", function () {
-  var lazyloadImages = document.querySelectorAll("img.lazy");
-  var lazyloadThrottleTimeout;
+  const lazyloadImages = document.querySelectorAll("img.lazy");
+  let lazyloadThrottleTimeout;
 
-  var lazyload = function lazyload() {
+  const lazyload = function lazyload() {
     if (lazyloadThrottleTimeout) {
       clearTimeout(lazyloadThrottleTimeout);
     }
 
     lazyloadThrottleTimeout = setTimeout(function () {
-      var scrollTop = window.pageYOffset;
+      const scrollTop = window.pageYOffset;
       lazyloadImages.forEach(function (img) {
         if (img.offsetTop < window.innerHeight + scrollTop) {
           img.src = img.dataset.src;
-          img.classList.remove('lazy');
+          img.classList.remove("lazy");
         }
       });
 
