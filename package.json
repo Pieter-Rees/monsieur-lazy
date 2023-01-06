@@ -14,7 +14,7 @@
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
-    "uglify-js": "^3.17.0"
+    "uglify-js": "^3.17.4"
   },
   "dependencies": {
     "core-js": "^3.25.0"
