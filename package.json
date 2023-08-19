@@ -17,6 +17,6 @@
     "uglify-js": "^3.17.0"
   },
   "dependencies": {
-    "core-js": "^3.25.0"
+    "core-js": "^3.32.1"
   }
 }
