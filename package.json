@@ -12,8 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.18.13",
-    "@babel/preset-env": "^7.18.10",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
     "uglify-js": "^3.17.0"
   },
   "dependencies": {
